@@ -359,7 +359,6 @@ public class Database extends SQLiteOpenHelper {
 
     public boolean update_status(String name) throws ParseException {
         Date curdate=new Date();
-
         SQLiteDatabase db=this.getWritableDatabase();
         Cursor c=db.rawQuery("SELECT serve_date FROM people,user,service WHERE user.user_id==people.user_id AND service.service_id==people.service_id AND user_name=='"+name+"'",null);
         if(c.getCount()==0) {
@@ -368,6 +367,7 @@ public class Database extends SQLiteOpenHelper {
         }
         else
         {
+            c.moveToFirst();
             do {
                 if ((new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy").parse(c.getString(0)).after(curdate)) ||(new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy").parse(c.getString(0)).equals(curdate))){
                         flag = 1;
