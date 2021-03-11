@@ -206,7 +206,7 @@ public class New_Services extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public void submit(View v) throws ParseException {
-        if (maxLimit >= person.length) {
+        if (maxLimit >= person.length && maxLimit==count) {
             EditText et = findViewById(R.id.place);
             String place = et.getText().toString();
             et = findViewById(R.id.amount);
@@ -236,6 +236,9 @@ public class New_Services extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent);
             }
         }
+        else if(maxLimit!=count)
+            Toast.makeText(getApplicationContext(),
+                    "Required Number of People not Selected!!", Toast.LENGTH_SHORT).show();
         else
             Toast.makeText(New_Services.this, "Enough Members are not Available \n\t On : "+dates+"\n Only "+tagsCheck.length+" members are Available ...", Toast.LENGTH_SHORT).show();
     }

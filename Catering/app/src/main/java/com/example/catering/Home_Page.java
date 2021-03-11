@@ -75,7 +75,7 @@ public class Home_Page extends AppCompatActivity {
 
     public void signin(View v)
     {
-        Intent intent=new Intent(this,Main_Page.class);
+        Intent intent=new Intent(this,Login.class);
         startActivity(intent);
     }
 
