@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".New_Member">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="G K Catering"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/text_back"
+        android:textSize="30dp"
+        android:id="@+id/logo"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrong"
+        android:textColor="@android:color/holo_red_dark"
+        android:text=" "
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        ></TextView>
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="430dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        android:layout_marginTop="150dp"
+        >
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter The Name"
+        ></EditText>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mobile"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter The Contact Number"
+        ></EditText>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/place"
+        android:layout_below="@+id/mobile"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter The Residential Place"
+        ></EditText>
+    <Button
+        android:id="@+id/date"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:onClick="submit_member"
+        android:layout_below="@+id/place"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_back"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:text="Submit" />
+    </RelativeLayout>
+</RelativeLayout>

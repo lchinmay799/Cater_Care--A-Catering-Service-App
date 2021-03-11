@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".Signup">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Starkart"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/text_back"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/logo"
+        ></TextView>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:id="@+id/image"
+        android:src="@drawable/loginpng"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrong"
+        android:textColor="@android:color/holo_red_dark"
+        android:text=" "
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        ></TextView>
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="480dp"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uname"
+            android:hint="Enter Fullname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact"
+            android:hint="Enter Mobile Number"
+            android:layout_below="@+id/uname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/place"
+            android:hint="Enter Residential Place"
+            android:layout_below="@+id/contact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            ></EditText>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@+id/place"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:gravity="center"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmpassword"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:gravity="center"
+            ></EditText>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/signupbutton"
+            android:text="Sign Up"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_back"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/confirmpassword"
+            android:layout_marginTop="30dp"
+            android:onClick="signup2"
+            ></Button>
+    </RelativeLayout>
+</RelativeLayout>

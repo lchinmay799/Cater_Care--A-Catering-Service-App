@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Service_Details">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="G K Catering"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/text_back"
+        android:textSize="30dp"
+        android:id="@+id/logo"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Date : "
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:id="@+id/date"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Time : "
+        android:layout_below="@+id/date"
+        android:textStyle="bold"
+        android:id="@+id/time"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Place : "
+        android:layout_below="@+id/time"
+        android:textStyle="bold"
+        android:id="@+id/place"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_dark"
+        android:text="Members Allocated : "
+        android:layout_below="@+id/place"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/head"
+        ></TextView>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/services"
+        android:layout_below="@+id/place"
+        android:layout_marginTop="70dp"
+        ></ListView>
+
+</RelativeLayout>

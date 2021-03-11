@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Member_Details">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="G K Catering"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/text_back"
+        android:textSize="30dp"
+        android:id="@+id/logo"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_dark"
+        android:text="Member Details"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:id="@+id/head"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="No Members Added in your Team ..."
+        android:layout_below="@+id/head"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:id="@+id/warn"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="No Members"
+        android:layout_below="@+id/head"
+        android:id="@+id/warning"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        ></TextView>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/names"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="60dp"
+        ></ListView>
+</RelativeLayout>

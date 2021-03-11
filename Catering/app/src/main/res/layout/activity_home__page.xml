@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".Home_Page">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/text_back"
+        android:text="G K Catering"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/textview"
+        ></TextView>
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_back"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:id="@+id/signin"
+        android:onClick="signin"
+        ></Button>
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_back"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_alignParentRight="true"
+        android:onClick="signup"
+        android:id="@+id/signup"
+        ></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/marquee"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@drawable/text_back"
+        android:layout_below="@+id/signin"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marquee"
+        android:layout_marginTop="20dp"
+        android:id="@+id/marquee_image"
+        ></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/marquee2"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@drawable/text_back"
+        android:layout_below="@+id/marquee_image"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        ></TextView>
+</RelativeLayout>
